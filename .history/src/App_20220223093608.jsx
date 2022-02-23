@@ -16,11 +16,9 @@ function App() {
   return (
     <div className="App">
       <h1>Liste de courses</h1>
-      {items.length > 0 ? items.map((item, i) => (
+      {items.map((item, i) => (
         <Item key={i} item={item} />
-      )):
-        <p>Aucun élément dans la liste.</p>
-      }
+      ))}
       <div>
         <h2>Ajouter un item a la liste</h2>
         <textarea onChange={e => setInputValue(e.target.value)} style={{display: 'block', marginBottom: "20px", resize: "none"}} />

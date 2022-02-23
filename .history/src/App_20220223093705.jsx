@@ -16,9 +16,9 @@ function App() {
   return (
     <div className="App">
       <h1>Liste de courses</h1>
-      {items.length > 0 ? items.map((item, i) => (
+      {items.length > 0 ? {items.map((item, i) => (
         <Item key={i} item={item} />
-      )):
+      ))}:
         <p>Aucun élément dans la liste.</p>
       }
       <div>
