@@ -12,7 +12,7 @@ function App() {
     const newItems = [...items, inputValue];
     setItems(newItems)
     setInputValue("")
-    document.querySelector('textarea').value = ""
+    document.querySelector('textarea').
   };
   return (
     <div className="App">
