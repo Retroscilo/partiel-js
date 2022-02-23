@@ -8,7 +8,7 @@ function App() {
 
   const addItem = (e) => {
     e.preventDefault();
-    if (!inputValue.match(/([A-Za-z .])\w+/)) {return alert("Votre item n'est pas valide !")}
+    if (!inputValue.match(/([A-Za-z .])\w+/)) {return alert('Votre')}
     const newItems = [...items, inputValue];
     setItems(newItems)
     setInputValue("")
