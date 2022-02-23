@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Item from "./Item";
 
 function App() {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState();
   const [items, setItems] = useState([]);
 
   const addItem = (e) => {

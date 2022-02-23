@@ -3,12 +3,12 @@ import React, { useState } from "react";
 import Item from "./Item";
 
 function App() {
-  const [inputValue, setInputValue] = useState("");
+  const [inputValue, setInputValue] = useState();
   const [items, setItems] = useState([]);
 
   const addItem = (e) => {
     e.preventDefault();
-    if (!inputValue.match(/([A-Za-z .])\w+/)) {return alert('Vous ne pouvez pas ajouter un item vide !')}
+    if(!inputValue.match(/[A-Za-z .])\w+/) return alert('Vous ne pouvez pas ajouter un item vide !')
     const newItems = [...items, inputValue];
     setItems(newItems)
     setInputValue("")
