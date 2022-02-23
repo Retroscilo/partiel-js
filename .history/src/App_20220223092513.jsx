@@ -20,7 +20,7 @@ function App() {
       ))}
       <div>
         <h2>Ajouter un item a la liste</h2>
-        <textarea onChange={e => setInputValue(e.target.value)} style={{display: 'block', marginBottom: "20px", resize: "none"}} />
+        <textarea onChange={e => setInputValue(e.target.value)} style={{display: 'block', marginBottom: "20px"}} />
         <button onClick={addItem}>Ajouter</button>
       </div>
     </div>
